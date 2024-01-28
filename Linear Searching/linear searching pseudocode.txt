@@ -1,0 +1,15 @@
+//Psuedocode for Linear Searching
+DECLARE Arr : ARRAY [0:10] As Integer
+
+
+Arr = ['A','B','C','D','E','F','G','H','I','J']
+
+FUNCTION LinearSearching(Value : CHARACTER) Returns INTEGER
+  For Count = 1 to 10
+    If Arr[Count] = Value 
+      THEN RETUEN Count
+    ENDIF
+  END FOR
+END FUNCTION
+
+	
