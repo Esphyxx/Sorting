@@ -1,0 +1,22 @@
+//Pseudocode for Binar Searching
+DECLARE Arr : ARRAY [0:10] As CHARACTER
+DECLARE LB,UB As INTEGER
+
+Arr = ['A','B','C','D','E','F','G','H','I','J']
+LB <-- 0
+UB <-- 10
+
+FUNCTION BinarySearching(Value : CHARACTER) Returns INETEGER
+  WHILE LB <= UB Do
+    Mid = INT((LB + UB)/2)
+    If Arr[Mid] = Value
+       THEN Return Mid
+      ElseIf Arr[Mid] < Value
+         THEN LB <-- Mid + 1
+        Else UB <-- Mid -1
+      ENDIF
+    ENDIF
+  ENDWHILE
+  Return -1
+ENDFUNCTION
+    
